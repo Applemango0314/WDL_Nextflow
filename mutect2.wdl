@@ -1,6 +1,6 @@
 version 1.0
 
-workflow Mutect2_base{
+workflow Mutect2{
 
       
 # Mutect2 inputs
