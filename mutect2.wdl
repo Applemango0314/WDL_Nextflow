@@ -225,7 +225,6 @@ task MergeVCFs {
 
     command {
         set -e
-        export GATK_LOCAL_JAR=~{default="/root/gatk.jar" gatk_override}
         gatk --java-options "-Xmx8g" MergeVcfs -I ~{sep=' -I ' input_vcfs} -O ~{output_vcf}
     }
 
